@@ -133,8 +133,11 @@ int zerostate = digitalRead(zero);
     
   }
   
-  float zeromass = mass - zerosize;
-  float grain = zeromass * 15.432;
+float zeromass = mass - zerosize;
+String szeromass = String(zeromass);
+float fin = szeromass.toFloat();
+float grain = fin * 15.43;
+Serial.println(grain);
   
 
   
