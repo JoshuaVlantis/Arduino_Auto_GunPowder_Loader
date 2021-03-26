@@ -34,8 +34,8 @@ void setup() {
   
   
   
-  lcd.init();                      // initialize the lcd 
-  lcd.init();
+  lcd.begin();                      // initialize the lcd 
+
   // tare procedure
   for (int ii=0;ii<int(avg_size);ii++){
     delay(10);
